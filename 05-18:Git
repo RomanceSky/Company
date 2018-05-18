@@ -1,0 +1,9 @@
+
+ 远程仓库的添加
+
+(Desginenv) charolimdeMacBook-Air:Design charolim$ git remote
+origin
+(Desginenv) charolimdeMacBook-Air:Design charolim$ git remote add jun git://github.com/RomanceSky/Design.git
+(Desginenv) charolimdeMacBook-Air:Design charolim$ git remote
+jun
+origin
