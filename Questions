@@ -1,0 +1,16 @@
+
+1、使用定制的User和Manager后访问django默认的User类，提示AttributeError: Manager isn't available; 'auth.User' has been swapped for 'accounts.User'
+
+from django.contrib.auth.models import User
+
+user = User.objects.all()
+
+REST中的认证，request.user
+
+def get(self, request, format=None):
+        content = {
+            'user': unicode(request.user),  # `django.contrib.auth.User` instance.
+            'auth': unicode(request.auth),  # None
+        }
+        return Response(content)
+print(request.User)输出a@a.com即当前登录的用户
