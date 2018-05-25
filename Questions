@@ -14,3 +14,5 @@ def get(self, request, format=None):
         }
         return Response(content)
 print(request.User)输出a@a.com即当前登录的用户
+
+REST框架将尝试对列表中的每个类进行身份验证，并将设置request.user and request.auth
